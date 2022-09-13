@@ -3,7 +3,7 @@ class Queue:
         self._data = []
 
     def __len__(self):
-       return len(self._data)
+        return len(self._data)
 
     def enqueue(self, value):
         """Aqui irá sua implementação"""
