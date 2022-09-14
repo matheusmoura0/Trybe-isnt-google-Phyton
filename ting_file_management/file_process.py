@@ -1,5 +1,6 @@
 from ting_file_management.file_management import txt_importer
 
+
 def process(path_file, instance):
     for i in instance._data:
         if i["nome_do_arquivo"] == path_file:
