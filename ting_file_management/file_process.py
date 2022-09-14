@@ -24,8 +24,9 @@ def remove(instance):
         deleted = f["nome_do_arquivo"]
         print(f"Arquivo {deleted} removido com sucesso")
 
+
 def file_metadata(instance, position):
-    if  len(instance._data) < position:
+    if len(instance._data) < position:
         print("Posição inválida", file=sys.stderr)
     else:
         file = instance.search(position)
