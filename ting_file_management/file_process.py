@@ -1,3 +1,4 @@
+import sys
 from ting_file_management.file_management import txt_importer
 
 
@@ -12,8 +13,7 @@ def process(path_file, instance):
         "linhas do arquivo": f
     }
     instance.enqueue(file_payload)
-    print(file_payload)
-
+    print(file_payload, file=sys.stdout)
 
 def remove(instance):
     """Aqui irá sua implementação"""
